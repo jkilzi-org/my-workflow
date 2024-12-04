@@ -1,0 +1,13 @@
+{
+  "$id": "classpath:/schemas/F05EB00E.D9D7.46B1.BC27.136EB02E22E1-schema.json",
+  "title": "Data Input Schema",
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "type": "object",
+  "properties": {
+    "sampleText": {
+      "title": "A sample text",
+      "type": "string",
+      "description": "Sample text data"
+    }
+  }
+}

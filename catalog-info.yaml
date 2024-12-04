@@ -1,0 +1,16 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: F05EB00E.D9D7.46B1.BC27.136EB02E22E1
+  description: A basic workflow
+  annotations:
+    argocd/app-selector: rht-gitops.com/janus-argocd=F05EB00E.D9D7.46B1.BC27.136EB02E22E1
+    backstage.io/kubernetes-namespace: orchestrator-gitops
+    backstage.io/kubernetes-id: F05EB00E.D9D7.46B1.BC27.136EB02E22E1-ci
+    janus-idp.io/tekton: F05EB00E.D9D7.46B1.BC27.136EB02E22E1
+    github.com/project-slug: jkilzi-org/my-workflow
+spec:
+  type: workflow-project
+  system: system:default/janus-orchestrator
+  lifecycle: development
+  owner: user:guest

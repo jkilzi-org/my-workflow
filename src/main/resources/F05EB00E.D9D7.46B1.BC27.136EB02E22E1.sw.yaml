@@ -1,0 +1,25 @@
+id: F05EB00E.D9D7.46B1.BC27.136EB02E22E1
+version: "1.0.0-SNAPSHOT"
+specVersion: "0.8"
+name: "F05EB00E.D9D7.46B1.BC27.136EB02E22E1"
+description: "A basic workflow"
+annotations:
+  - "workflow-type/infrastructure"
+dataInputSchema:
+  failOnValidationErrors: true
+  schema: schemas/F05EB00E.D9D7.46B1.BC27.136EB02E22E1-input-schema.json
+functions:
+  - name: logInfo
+    type: custom
+    operation: "sysout:INFO"
+start: "StartState"
+states:
+  - name: "StartState"
+    type: "operation"
+    actions:
+      - name: logInput
+        functionRef:
+          refName: logInfo
+          arguments:
+            message: '"You entered " + .sampleText'
+    end: true
